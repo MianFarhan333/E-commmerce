@@ -1,0 +1,60 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Add Product</title>
+    <link rel="stylesheet" href="./addproduct.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-div">
+                <img class="side-logo" src="../../Assets/Engine_Logo_Black.png" alt="">
+            </div>
+            <ul>
+                <li><a href="../../Admin Dashboard/index.html">Dashboard</a></li>
+                <li>Customers</li>
+                <li><a href="../Orders/orders.html">Orders</a></li>
+                <li>Analytics</li>
+                <li>Messages <span
+                        style="background:#e64060;color:white;padding:2px 6px;border-radius:50%;font-size:12px;margin-left:5px;">26</span>
+                </li>
+                <li><a href="../Product/product.html">Products</a></li>
+                <li>Reports</li>
+                <li>Settings</li>
+                <li>Add Product</li>
+            </ul>
+        </div>
+        <div class="main-cont">
+            <h2>Add Product</h2>
+            <div class="line"></div>
+            <form id="addProductForm">
+                <input type="text" id="productName" placeholder="Product Name" required><br><br>
+                <input type="number" id="productPrice" placeholder="Product Price" required><br><br>
+
+                <select id="productCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="kids">Kids</option>
+                </select><br><br>
+
+                <!-- <select id="productSubCategory" required>
+                    <option value="">Select Sub-Category</option>
+                </select><br><br> -->
+
+                <input type="file" id="productImage" accept="image/*" required><br><br>
+                <button type="submit">Add Product</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./addproduct.js"></script>
+</body>
+
+</html>

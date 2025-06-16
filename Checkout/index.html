@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="checkout-form" onsubmit="submitForm(event)">
+      <h2>Contact</h2>
+      <input type="text" placeholder="Email or mobile phone number" required />
+      <span class="error">Enter an email or phone number</span>
+
+      <h2>Delivery</h2>
+      <select required>
+        <option value="Pakistan" selected>Pakistan</option>
+      </select>
+      <div class="name-fields">
+        <input type="text" placeholder="First name (optional)" />
+        <input type="text" placeholder="Last name" />
+      </div>
+      <input type="text" placeholder="Address" required />
+      <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+      <div class="city-postal">
+        <input type="text" placeholder="City" required />
+        <input type="text" placeholder="Postal code (optional)" />
+      </div>
+      <input type="text" placeholder="Phone" required />
+      <div class="button-row">
+        <button type="button" class="back-btn" onclick="goBack()">Back</button>
+        <button type="submit" class="order-btn">Complete Order</button>
+      </div>
+    </form>
+
+    <div class="order-summary">
+      <div id="cart-items"></div>
+      <div class="summary">
+        <h3 id="subtotal">Subtotal: Rs.0.00</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="./checkout.js"></script>
+</body>
+</html>

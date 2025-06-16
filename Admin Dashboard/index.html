@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+   <div class="sidebar">
+     <div class="logo-div">
+         <img class="side-logo" src="../Assets/Engine_Logo_Black.png" alt="">
+     </div>
+    <ul>
+      <li>Dashboard</li>
+      <li>Customers</li>
+      <li><a href="./Orders/orders.html">Orders</a></li>
+      <li>Analytics</li>
+      <li>Messages <span style="background:#e64060;color:white;padding:2px 6px;border-radius:50%;font-size:12px;margin-left:5px;">26</span></li>
+      <li><a href="./Product/product.html">Products</a></li>
+      <li>Reports</li>
+      <li>Settings</li>
+      <li><a href="./Add Product/addproduct.html">Add Product</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="top-bar">
+      <h1>Dashboard</h1>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Sales</h3>
+        <h2>$25,024</h2>
+        <p>Last 24 Hours</p>
+      </div>
+      <div class="card">
+        <h3>Total Expenses</h3>
+        <h2>$14,160</h2>
+        <p>Last 24 Hours</p>
+      </div>
+      <div class="card">
+        <h3>Total Income</h3>
+        <h2>$10,864</h2>
+        <p>Last 24 Hours</p>
+      </div>
+    </div>
+
+    <div class="recent-orders">
+      <div class="orders">
+        <h3>Recent Orders</h3>
+        <table>
+          <tr><th>Product Name</th><th>Product Number</th><th>Payment</th><th>Status</th></tr>
+          <tr><td>Mens jeans</td><td>85631</td><td>Due</td><td class="status-pending">Pending</td></tr>
+          <tr><td>Womens Shirts</td><td>36378</td><td>Refunded</td><td class="status-declined">Declined</td></tr>
+          <tr><td>Mens shorts</td><td>49347</td><td>Due</td><td class="status-pending">Pending</td></tr>
+          <tr><td>kids Products</td><td>96996</td><td>Paid</td><td class="status-delivered">Delivered</td></tr>
+        </table>
+      </div>
+
+      <div class="updates-box">
+        <h3>Recent Updates:</h3>
+        <p><b>Mike Tyson</b> received his order of mens shorts. <br><small>2 Minutes Ago</small></p>
+        <p><b>Diana Ayi</b> declined her order of womens bottom. <br><small>5 Minutes Ago</small></p>
+        <p><b>Mandy Roy</b> received his order of kids jeans. <br><small>6 Minutes Ago</small></p>
+      </div>
+    </div>
+
+    <div class="sales-analytics">
+      <div class="analytics-box">
+        <h3>Sales Analytics</h3>
+        <p>Online Orders: <b style="color:green">+35%</b> - 3849</p>
+        <p>Offline Orders: <b style="color:red">-17%</b> - 1100</p>
+        <p>New Customer: <b style="color:green">+25%</b> - 849</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
